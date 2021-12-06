@@ -2,6 +2,7 @@ $(start);
 
 function start(){
     $("#btn").on("click",duck);
+    $("#delete").on("click",del);
 }
 
 function duck(){
@@ -17,5 +18,8 @@ function duck(){
         newDiv.load(`showImages.php?chicken=${myInputVal}`);
     }
 
+}
 
+function del(){
+    $("#enter").empty();
 }
